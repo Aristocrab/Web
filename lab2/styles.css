@@ -1,0 +1,91 @@
+/* Завдання 1 */
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+table, tr, td {
+    border: 1px solid black;
+}
+.row1{
+    background-color: #108f8f;
+    color:#8F3F10;
+    transition: .1s linear;
+}
+.row1:hover{
+    background-color: #8F3F10;
+    color:#108f8f ;
+}
+
+.row2, .row3{
+    background-color: #f5f505;
+    color: #7B05F5;
+    transition: .1s linear;
+}
+.row2:hover{
+    background-color: #7B05F5;
+    color: #f5f505;
+}
+
+.row2:hover ~ .row3{
+    background-color: #7B05F5;
+    color: #f5f505;
+}
+
+.row3:hover {
+    background-color: #7B05F5;
+    color: #f5f505;
+}
+
+.row3:hover ~ .row2{
+    background-color: #7B05F5;
+    color: #f5f505;
+}
+
+td{
+    height: 100px ;
+    width: 400px;
+    text-align: center;
+}
+
+/* Завдання 2 */
+
+.wrapper{
+    margin-top: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.element{
+    position: relative;
+    height: 350px;
+    width: 350px;
+}
+.circle{
+    position:absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    border: 1px solid #000;
+}
+.red{
+    left: 50%;
+    transform: translateX(-50%);
+    top:0;
+    z-index: 1;
+    background-color: rgba(255,0,0,.5);
+}
+.blue{
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    background-color: rgba(0,0,255,.5);
+
+}
+.green{
+    bottom: 0;
+    right: 0;
+    z-index: 3;
+    background-color: rgba(0,255,0,.5);
+}
