@@ -1,0 +1,26 @@
+.active-first{
+    background-color: lightcoral;
+    color: white;
+}
+
+.active-second{
+    background-color: lightblue;
+    color: red;
+}
+
+.btns-container{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.enlarge{
+    width: 150%;
+    height: 100%;
+}
+
+.reduce{
+    width: 50%;
+    height: 50%;
+}
